@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        /*
         //prima scrivo dentro un file
         FileWriter myWriter = new FileWriter("nome.txt");
         for(int i=0; i<100; i++) {
@@ -22,7 +21,7 @@ public class App {
             System.out.println(s1);
         }
         input.close();
-        */
+
 
         
     }
