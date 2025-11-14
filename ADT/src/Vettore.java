@@ -1,7 +1,11 @@
-public class Vettore<T> { //abbiamo creato una classe generica, cioè una classe che ha come parmaetro un'altra classe
-
+public class Vettore<T> {   //abbiamo creato una classe generica, cioè una classe che ha come parametro un'altra classe
+                            //classi generiche = classi a cui si aggiungono dei parametri
     T[] v;
     int n, start, delta;
+
+    public Vettore() {
+        this(10, 5);
+    }
 
     @SuppressWarnings("unchecked")
 
@@ -20,7 +24,7 @@ public class Vettore<T> { //abbiamo creato una classe generica, cioè una classe
         if (v.length==n) {
             T[] v2 = (T[]) new Object[v.length + delta];
             for (int i=0; i<n; i++) v2[i]=v[i];
-            v = v2;
+            v=v2;
         }
         v[n++] = s;
     }
